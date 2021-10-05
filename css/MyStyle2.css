@@ -27,9 +27,10 @@ div{
     color:crimson
 }
 
-span{
-  
-    background-color: fuchsia;
+nav{
+    float: right;
+    background-color:palevioletred;
+    color: blueviolet;
 }
 
 body{
