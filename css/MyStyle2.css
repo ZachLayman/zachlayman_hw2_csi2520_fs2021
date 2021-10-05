@@ -1,0 +1,38 @@
+h1{
+    color:burlywood;
+    background-color:palevioletred;
+    font-style:oblique;
+    text-align: center;
+}
+
+p{
+    color:red;
+    font-size:125%;
+
+}
+
+h2{
+    text-align: center;
+    color:royalblue;
+    background-color:sandybrown;
+    font-style: inherit;
+}
+
+#para1{
+    color:blueviolet !important
+
+}
+
+div{
+    color:crimson
+}
+
+span{
+  
+    background-color: fuchsia;
+}
+
+body{
+    background-color: rosybrown;
+    font-family: cursive;
+}
