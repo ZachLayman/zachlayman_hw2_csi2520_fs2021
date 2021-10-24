@@ -1,9 +1,18 @@
 body{
     background-color: rgb(235, 235, 235);
+    border-style: solid;
+    border-width:10px;
+    padding: 30px;
+    border-color:rgb(23, 32, 85);
+    background-color: rgb(146, 178, 238);
+    color:rgb(0, 0, 0);
+    position: relative;
+    width:1390px;
+    height:1200px;
 }
 
 .PictureCap{
-    top:500px;
+    top:550px;
     position:absolute;
     left:850px;
     Color:black;
@@ -15,11 +24,11 @@ body{
     height:400px;
     float: right;
     position:absolute;
-    left:850px;
-    bottom:400px;
+    left:800px;
+    bottom:700px;
     border-style: solid;
     border-width:10px;
-    border-color:#333;
+    border-color:rgb(23, 32, 85);
     
 }
 
@@ -27,11 +36,11 @@ body{
     border-style: solid;
     border-width:10px;
     padding: 30px;
-    border-color:#333;
-    background-color: white;
+    border-color:rgb(23, 32, 85);
+    background-color: rgb(138, 180, 253);
     color:rgb(0, 0, 0);
     position: relative;
-    max-width: 700px;
+    max-width: 650px;
     max-height: 300px;
     font-size: 30px;
 }
@@ -57,13 +66,13 @@ body{
     top:150px;
     height:400px;
     position:absolute;
-    right:0px;
+    right:30px;
     max-width: 300px;
     border-style: solid;
     border-width:10px;
     padding: 30px;
-    border-color:#333;
-    background-color: white;
+    border-color:rgb(23, 32, 85);
+    background-color: rgb(138, 180, 253);
     color:rgb(0, 0, 0);
 }
 
@@ -76,8 +85,9 @@ body{
     height:200px;
     position:absolute;
     left:1200px;
-    bottom:290px;
+    bottom:650px;
     width:150px;
+    
 
 }
 
@@ -90,8 +100,8 @@ body{
     border-style: solid;
     border-width:10px;
     padding: 30px;
-    border-color:#333;
-    background-color: white;
+    border-color:rgb(23, 32, 85);
+    background-color: rgb(138, 180, 253);
     color:rgb(0, 0, 0);
 
 }
@@ -107,13 +117,13 @@ body{
     top:150px;
     height:400px;
     position:absolute;
-    right:1050px;
+    left:30px;
     max-width: 350px;
     border-style: solid;
     border-width:10px;
     padding: 30px;
-    border-color:#333;
-    background-color: white;
+    border-color:rgb(23, 32, 85);
+    background-color: rgb(138, 180, 253);
     color:rgb(0, 0, 0);
     display: block;
 }
@@ -122,15 +132,39 @@ body{
     Top:200px;
     color: #333;
     font-size: 30px;
-
-
 }
 
+a{
+
+    color: #333;
+}
+
+.Objective1{
+    display: block;
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+.ContentResume{
+    border-style: solid;
+    border-width:10px;
+    padding: 30px;
+    border-color:rgb(23, 32, 85);
+    background-color: rgb(138, 180, 253);
+    color:rgb(0, 0, 0);
+    max-width: 600px;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+}
 
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: rgb(23, 32, 85);
     overflow: hidden;
   }
   
@@ -150,10 +184,5 @@ body{
     color: black;
   }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #cf7815;
-    color: white;
-  }
 
   /*------------------------------------------------------------------------------------------------------/*
