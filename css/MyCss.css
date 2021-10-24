@@ -8,7 +8,7 @@ body{
     color:rgb(0, 0, 0);
     position: relative;
     width:1390px;
-    height:1200px;
+    height:1000px;
 }
 
 .PictureCap{
@@ -25,7 +25,7 @@ body{
     float: right;
     position:absolute;
     left:800px;
-    bottom:700px;
+    bottom:520px;
     border-style: solid;
     border-width:10px;
     border-color:rgb(23, 32, 85);
@@ -56,6 +56,7 @@ body{
     top:150px !important;
     font-size: 15px;
     position: relative;
+    
 }
 
 .Bottom1 a{
@@ -85,7 +86,7 @@ body{
     height:200px;
     position:absolute;
     left:1200px;
-    bottom:650px;
+    bottom:450px;
     width:150px;
     
 
