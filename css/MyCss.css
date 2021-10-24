@@ -155,8 +155,7 @@ a{
     background-color: rgb(138, 180, 253);
     color:rgb(0, 0, 0);
     max-width: 600px;
-    display: block;
-    text-align: center;
+    left:350px;
     position: relative;
     padding-bottom: 40px;
 }
@@ -185,4 +184,9 @@ a{
   }
   
 
+
+  table, th, td {
+    border: 1px solid black;
+   
+  }
   /*------------------------------------------------------------------------------------------------------/*
