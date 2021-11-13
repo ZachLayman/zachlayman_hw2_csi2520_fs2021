@@ -208,16 +208,15 @@ a{
 }
 
 .CButton{
-    top: 150px;
+    top: 25px;
     position:relative;
     left: 120px;
     
 }
 
-.pullUpBox{
-    top: 700px;
-    position:relative;
-    left: 120px;
+.CommentContainer{
+    margin-top: 100px;
+
 }
 
 /* Add a black background color to the top navigation */
