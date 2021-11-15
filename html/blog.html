@@ -12,6 +12,11 @@
         <link rel="stylesheet" href="../css/MyCss.css">
         
     </head>
+    <style>
+        #comment {
+            visibility: hidden;
+        }
+    </style>
 
     <body>
         <script src="../js/MyJS.js" defer></script>
@@ -53,9 +58,14 @@
             <a href="https://www.youtube.com/channel/UC7MuhprUmtKUg0tltG-a4nA">Youtube Link<i class="fab fa-youtube"></i></a>
             
         </div>
-
-        <div class="CommentContainer" id="AllComments">
+        <!-- <div class="textField" id="inputFieldText">
             <button class = "CButton" id = "CButton">Leave a comment</button>
+        </div>
+        <div class="CommentContainer" id="AllComments"></div> -->
+        <div class="container">
+            <textarea id="comment"></textarea>
+            <button id="addComments">Leave a comment</button>
+            <div id="allComments"></div>
         </div>
 
     </body>

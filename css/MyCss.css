@@ -207,16 +207,11 @@ a{
 
 }
 
-.CButton{
-    top: 25px;
+
+.pullUpBox{
+    top: 10px;
     position:relative;
     left: 120px;
-    
-}
-
-.CommentContainer{
-    margin-top: 100px;
-
 }
 
 /* Add a black background color to the top navigation */
@@ -242,9 +237,45 @@ a{
   }
   
 
-
   table, th, td {
     border: 1px solid black;
    
   }
+
+
+.reply {
+    margin-left: 650px;
+}
+input[type=text]:invalid {
+    border: red solid 1px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 50px; 
+}
+
+#comment{
+    background-color:white;
+}
+#addComments {
+    width: 20%;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+    align-self: center;
+}
+
+.wrapper > button {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+}
+.wrapper {
+    text-align: center;
+}
   /*------------------------------------------------------------------------------------------------------/*

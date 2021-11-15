@@ -1,37 +1,77 @@
+const commentContainer = document.getElementById("allComments");
+document.getElementById("addComments").addEventListener("click", function (ev) {
+  addComment(ev);
+});
 
-
-const CommentContainer = document.getElementById("AllComments")
-document.getElementById("CButton").addEventListener("click",function(ev){
-    pullUpBox(ev)
-})
-function pullUpBox( ){
-    const input = document.createElement("input");
-    input.setAttribute("id","inputId");
-    input.setAttribute("type", "text",)
-    input.setAttribute("size","100")
-    input.setAttribute("height", "50")
-    CommentContainer.appendChild(input);
-
-    const SubmitButton=document.createElement("button")
-    SubmitButton.innerHTML = "submit"
-    SubmitButton.setAttribute("id","submitbutton")
-    CommentContainer.appendChild(SubmitButton)
-
+function displayInput() {
+  console.log(document.getElementById("comment").style.visibility);
+  if (document.getElementById("comment").style.visibility == "visible") {
+    document.getElementById("comment").style.visibility = "hidden";
+  } else {
+    document.getElementById("comment").style.visibility = "visible";
+  }
 }
-if(document.getElementById("submitbutton")){
-    document.getElementById("submitbutton").addEventListener("click",function(ev){
-        addComment(ev)
-    })    
-}
-function addComment(){
-    let commentText = document.getElementById("inputId").value;
-    const textBox = document.createElement("div")
-    textBox.className = "comment"
-    textBox.innerHTML = commentText
-    CommentContainer.appendChild(textBox)
 
+function addComment(ev) {
+  displayInput();
+  let commentText, wrapDiv;
+  const textBox = document.createElement("div");
+  const replyButton = document.createElement("button");
+  replyButton.className = "reply";
+  replyButton.innerHTML = "Reply";
 
+  const deleteButton = document.createElement("button");
+
+  if (hasClass(ev.target.parentElement, "container")) {
+    const wrapDiv = document.createElement("div");
+    wrapDiv.className = "wrapper";
+    wrapDiv.style.marginLeft = 0;
+    commentText = document.getElementById("comment").value;
+    document.getElementById("comment").value = "";
+    textBox.innerHTML = commentText;
+    textBox.style.backgroundColor = "white";
+    wrapDiv.append(textBox, replyButton);
+    commentContainer.appendChild(wrapDiv);
+  } else {
+    wrapDiv = ev.target.parentElement;
+    commentText = ev.target.parentElement.firstElementChild.value;
+    textBox.innerHTML = commentText;
+    textBox.style.backgroundColor = "#D3D3D3";
+    wrapDiv.innerHTML = "";
+    wrapDiv.append(textBox, replyButton);
+  }
 }
+
+function hasClass(elem, className) {
+  return elem.className.split(" ").indexOf(className) > -1;
+}
+document.getElementById("allComments").addEventListener("click", function (e) {
+  if (hasClass(e.target, "reply")) {
+    const parentDiv = e.target.parentElement;
+    const wrapDiv = document.createElement("div");
+    wrapDiv.style.marginLeft =
+      (Number.parseInt(parentDiv.style.marginLeft) + 15).toString() + "px";
+    wrapDiv.className = "wrapper";
+    const textArea = document.createElement("textarea");
+    textArea.style.marginRight = "20px";
+    const addButton = document.createElement("button");
+    addButton.className = "addReply";
+    addButton.innerHTML = "Post";
+    const cancelButton = document.createElement("button");
+    cancelButton.innerHTML = "Cancel";
+    cancelButton.className = "cancelReply";
+    wrapDiv.append(textArea, addButton, cancelButton);
+    parentDiv.appendChild(wrapDiv);
+  } else if (hasClass(e.target, "addReply")) {
+    addComment(e);
+  } else if (hasClass(e.target, "cancelReply")) {
+    e.target.parentElement.innerHTML = "";
+    setOnLocalStorage();
+  } else if (hasClass(e.target, "deleteComment")) {
+    e.target.parentElement.remove();
+  }
+});
+
 
 
 
