@@ -1,0 +1,17 @@
+{
+  "name": "zachlayman_hw2_csi2520_fs2021",
+  "version": "1.0.0",
+  "description": "homework 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.ejs"
+    
+  },
+  "author": "Zach",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
