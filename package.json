@@ -2,9 +2,9 @@
   "name": "zachlayman_hw2_csi2520_fs2021",
   "version": "1.0.0",
   "description": "homework 5",
-  "main": "info.html",
+  "main": "index.js",
   "scripts": {
-    "start": "node info",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
     
   },
