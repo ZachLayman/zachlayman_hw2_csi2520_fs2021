@@ -11,13 +11,12 @@ app.use(express.static('public'));
   app.use(express.urlencoded({ extended: true })); // to parse HTML form data
   
   // Initialize ejs Middleware
-
   app.set("view engine", "ejs");
   app.use("/public", express.static(__dirname + "/public"));
 
   // routes
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("node index");
 });
 
 // Setup server ports
