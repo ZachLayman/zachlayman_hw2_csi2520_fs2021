@@ -14,14 +14,14 @@ app.set("view engine", "ejs");
 app.use("/public", express.static(__dirname + "/public"));
 
 // routes
-//app.get("/", (req, res) => {
-  //res.render("index.ejs");
-//});
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
   // framework
-app.get("/", (req, res) => {
-  res.send('hello from my express framework');
-});
+//app.get("/", (req, res) => {
+  //res.send('hello from my express framework');
+//});
 
 // Setup server ports
 const PORT = process.env.PORT || 3000;
