@@ -16,10 +16,10 @@
 
         <!--TOP NAV BAR-->
         <div class="topnav">
-            <a class="active" href="./info.ejs">Home</a>
-            <a href="./myresume.ejs">My Resume</a>
-            <a href="./my_fun_facts.ejs">My Fun Facts</a>
-            <a href="./blog.ejs">Blog</a>
+            <a class="active" href="./info.html">Home</a>
+            <a href="./myresume.html">My Resume</a>
+            <a href="./my_fun_facts.html">My Fun Facts</a>
+            <a href="./blog.html">Blog</a>
         </div>
 
 
