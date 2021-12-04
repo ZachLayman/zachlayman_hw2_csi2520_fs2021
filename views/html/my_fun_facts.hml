@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="shortcut icon" type="image/png" href="../img/dogefav.png">
+
+        <script src="https://kit.fontawesome.com/b8588d247b.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../public/css/MyCss.css">
+    </head>
+
+    <body>
+
+        <!--TOP NAV BAR-->
+        <div class="topnav">
+            <a class="active" href="./info.ejs">Home</a>
+            <a href="./myresume.ejs">My Resume</a>
+            <a href="./my_fun_facts.ejs">My Fun Facts</a>
+            <a href="./blog.ejs">Blog</a>
+        </div>
+
+
+        <H1>Some Fun Facts About Me</H1>
+        
+        
+            <div class="FavBook">
+                <h2>My Favorite Book: To Shake the Sleeping Self</h2>
+                <a href="https://www.amazon.com/Shake-Sleeping-Self-Journey-Patagonia/dp/1524761389">Purchase Here</a>
+                <p>I love this book because of the authors great way of story telling and the books insight on how travel can change a person.</p>
+            </div>
+
+             <img class="FavBookImg" src="../img/ToShake.jpg" height= 20% width = 20% alt="To Shake the Sleeping Self Cover">
+        
+        <div>
+
+
+
+        <div class="MusicD">
+            <h3>Favorite Current Song</h3>
+        
+            <audio src="../audio/DFTRA (mp3cut.net).mp3"controls> 
+                Audio file not supported by your browser.
+            </audio>
+            <a class="A1" href="https://www.youtube.com/watch?v=THVbtGqEO1o">Fair Trade by Drake ft Travis Scott</a>
+               
+        </div>
+
+        <div class="Movie">
+           <h3> Favorite Movie Trailer</h3>
+           <iframe width="360" height="205" src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="Bottom3">
+            <hr>
+            <p>Author: Zach Layman</p>
+            <p><a href="mailto:Zlayman@oakland.edu">Zlayman@Oakland.edu</a></p>
+            <P>Social Medias</P>
+            
+            <a href="https://www.instagram.com/ztlayman/">Instagram Link<i class="fab fa-instagram"></i></a>
+            
+            <a href="https://www.facebook.com/zach.layman.10/">Facebook Link<i class="fab fa-facebook"></i></a>  
+           
+            <a href="https://www.youtube.com/channel/UC7MuhprUmtKUg0tltG-a4nA">Youtube Link<i class="fab fa-youtube"></i></a>
+            
+        </div>
+
+    </body>
+</html>

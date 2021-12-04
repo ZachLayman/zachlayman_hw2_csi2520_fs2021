@@ -5,8 +5,20 @@ const app = new express()
 // Render static files
 app.use(express.static('public'));
   
+// Initialize Body Parser Middleware to parse data sent by users in the request object
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // to parse HTML form data
 
-  // routes
+// Initialize ejs Middleware
+app.set("view engine", "ejs");
+app.use("/public", express.static(__dirname + "/public"));
+
+// routes
+//app.get("/info", (req, res) => {
+  //res.render("/views/info");
+//});
+
+  // framework
 app.get("/", (req, res) => {
   res.send('hello from my express framework');
 });
