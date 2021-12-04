@@ -1,6 +1,6 @@
 const express = require("express")
 const ejs = require("ejs");
-const mysql = require("mysql");
+// const mysql = require("mysql");
 
 const app = express()
 // Render static files
