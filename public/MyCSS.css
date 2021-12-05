@@ -280,3 +280,15 @@ input[type=text]:invalid {
 }
   /*------------------------------------------------------------------------------------------------------/*/
 
+  .quiz-container {
+    text-align: center;
+  }
+  
+  .answer-container {
+    list-style-type: none;
+    width: 50%;
+  }
+  
+  #answer-area {
+    width: 50%;
+  }
