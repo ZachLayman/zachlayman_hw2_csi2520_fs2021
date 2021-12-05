@@ -18,6 +18,8 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+
+
   // framework
 //app.get("/", (req, res) => {
   //res.send('hello from my express framework');
